@@ -26,14 +26,14 @@ npm run dev
 ~~~
 Open the printed local URL and visit /signin-with-chatgpt?return_to=/ to use the local test identity. Local and production databases are separate.
 
-##Project structure
+## Project structure
 
-public/: browser interface, capture bookmarklet, and synchronization engine.
-app/: Vinext routes for the page and library API.
-server/: authenticated library operations and SQLite tests.
-db/ and drizzle/: schema and immutable migrations.
-.openai/hosting.json: Sites deployment identity and D1 binding.
-Hosting and authentication
+- public/: browser interface, capture bookmarklet, and synchronization engine.
+- app/: Vinext routes for the page and library API.
+- server/: authenticated library operations and SQLite tests.
+- db/ and drizzle/: schema and immutable migrations.
+- .openai/hosting.json: Sites deployment identity and D1 binding.
+## Hosting and authentication
 
 Production hosting uses OpenAI Sites with a Cloudflare Worker and D1. Sites authenticates visitors and supplies the trusted user identity used to isolate each person’s library. Open the private app with the same ChatGPT account on each device.
 
