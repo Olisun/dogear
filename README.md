@@ -14,13 +14,16 @@ Use Node.js 24 and npm. The server tests use Node’s built-in SQLite module.
 ~~~sh
 npm install
 npm test
-npm run build
+npm run build 
+~~~
 Create the local D1 database with the committed schema migration:
-
+~~~sh
 node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_late_randall.sql
+~~~
 Then start the development server:
-
+~~~sh
 npm run dev
+~~~
 Open the printed local URL and visit /signin-with-chatgpt?return_to=/ to use the local test identity. Local and production databases are separate.
 
 Project structure
