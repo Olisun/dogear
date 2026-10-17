@@ -26,7 +26,7 @@ npm run dev
 ~~~
 Open the printed local URL and visit /signin-with-chatgpt?return_to=/ to use the local test identity. Local and production databases are separate.
 
-Project structure
+##Project structure
 
 public/: browser interface, capture bookmarklet, and synchronization engine.
 app/: Vinext routes for the page and library API.
