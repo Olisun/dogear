@@ -1,4 +1,4 @@
-Bookmarking App
+# Bookmarking App
 Dogear is an exact bookmarking app for long articles. It saves the passage where you stopped and your reading progress, so you can pick up later in Safari on your Mac or iPhone. Your private reading library stays in sync across devices.
 
 Capture your place using a Safari bookmarklet.
