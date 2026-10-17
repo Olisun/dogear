@@ -11,7 +11,7 @@ The app includes separate setup guides for Safari on Mac and iPhone, plus an ori
 Development
 
 Use Node.js 24 and npm. The server tests use Node’s built-in SQLite module.
-
+~~~ sh
 npm install
 npm test
 npm run build
